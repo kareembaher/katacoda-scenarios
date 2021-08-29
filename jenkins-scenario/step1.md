@@ -4,8 +4,7 @@ Dell's DevOps team already created a Jenkins Docker image, so you can use it in 
 
 Execute the following command to run the Jenkins Docker container:
 
-`
-docker run -d -u root --name jenkins \
+`docker run -d -u root --name jenkins \
     -p 8080:8080 -p 50000:50000 \
     -v /root/jenkins:/var/jenkins_home \
     omarmohsen/jenkins-sa
@@ -31,6 +30,6 @@ You can view the logs of the container to check that Jenkins in up and running:
 
 `docker logs jenkins -f `{{execute}}
 
-Enter CTRL+C after ensuring that Jenkins is up
+Enter CTRL+C after ensuring that Jenkins is up.
 
 In the next steps, you'll use the Jenkins dashboard to configure the plugins and start building the Pipeline.
