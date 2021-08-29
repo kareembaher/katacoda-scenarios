@@ -1,11 +1,11 @@
 Running the application directly on the host is not the best practice, its better to run on a container, and thats what we are going to do in this step.
 
 `
-		stage ('Build docker image'){
-			steps{
-				sh 'docker build -t django-blog -f docker/Dockerfile . '
-			}
-		}
+stage ('Build docker image'){
+	steps{
+		sh 'docker build -t django-blog -f docker/Dockerfile . '
+	}
+}
 `
 
 This stage will build a Docker container for the application with the `/root/workspace/django-pipeline/docker/Dockerfile`{{open}}

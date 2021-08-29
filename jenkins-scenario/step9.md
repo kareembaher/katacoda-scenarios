@@ -3,11 +3,11 @@ In this step, we will add a stage to run the image we made in the previous one
 Add the following stage:
 
 `
-		stage ('Run docker container'){
-			steps{
-				sh 'docker run --rm  -d -p 8001:8000 django-blog'
-			}
-		}
+stage ('Run docker container'){
+	steps{
+		sh 'docker run --rm  -d -p 8001:8000 django-blog'
+	}
+}
 `
 
 Now lets Run the pipeline and test the stages you made.
